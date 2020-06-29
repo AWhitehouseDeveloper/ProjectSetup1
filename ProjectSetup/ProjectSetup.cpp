@@ -18,6 +18,6 @@ int main()
     Core::RegisterUpdateFn(Update);
     Core::RegisterDrawFn(Draw);
 
-    Core::GameLoop();
+    Core::GameLoop() ;
     Core::Shutdown();
 }
