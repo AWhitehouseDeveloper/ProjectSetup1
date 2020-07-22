@@ -18,11 +18,15 @@ namespace nc
 
 		void Draw(Core::Graphics& graphics, nc::Vector2 position, float scale = 1.0f, float angle = 0.0f);
 		void Draw(Core::Graphics& graphica, const Transform& transform);
+		
 		void SetColor(Color color) { m_color = color; }
 		Color& GetColor() { return m_color; }
+
+		float GetRadius() { return m_radius; }
 
 	private:
 		std::vector<nc::Vector2> m_points;
 		Color m_color;
+		float m_radius{ 1 };
 	};
 };

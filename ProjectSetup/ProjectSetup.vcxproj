@@ -159,12 +159,20 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Actors\Enemy.cpp" />
+    <ClCompile Include="Actors\Player.cpp" />
+    <ClCompile Include="Projectile.cpp" />
     <ClCompile Include="ProjectSetup.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Engine\Engine.vcxproj">
       <Project>{06948ffe-d1ba-463f-bfa4-f71f6a79dcf2}</Project>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Actors\Enemy.h" />
+    <ClInclude Include="Actors\Player.h" />
+    <ClInclude Include="Projectile.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

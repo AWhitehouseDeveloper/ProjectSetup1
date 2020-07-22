@@ -13,7 +13,7 @@ namespace nc {
 			return radians * (RAD_TO_DEG);
 		}
 
-		inline float DregreesToRadians(float degrees) {
+		inline float DegreesToRadians(float degrees) {
 			return degrees * (DEG_TO_RAD);
 		}
 

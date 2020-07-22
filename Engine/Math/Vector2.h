@@ -95,6 +95,9 @@ namespace nc {
 			return Vector2{ -x, -y };
 		}
 
+		float& operator [] (size_t index) { return (&x)[index]; }
+		const float& operator [] (size_t index) const { return (&x)[index]; }
+
 		friend std::istream& operator >> (std::istream& stream, Vector2& v);
 
 		float Length() const;
@@ -122,7 +125,7 @@ namespace nc {
 		return (x * x) + (y * y);
 	}
 
-	inline float Distance(const Vector2& v1, const Vector2& v2) {
+	inline float Vector2::Distance(const Vector2& v1, const Vector2& v2) {
 		Vector2 v = v1 - v2;
 		return v.Length();
 	}
